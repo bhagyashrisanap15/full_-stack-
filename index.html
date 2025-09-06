@@ -1,37 +1,227 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Instagram Bottom Nav</title>
+  <title>Doremon using position</title>
   <style>
-      body {
-      margin: 0;
-      font-family: sans-serif;
-      text-align: center;}
-      .bottom-nav {
-      bottom: 0;
-      left: 0;
-      background-color: white;
-      position: fixed;
-      text-align: center;
-      border: 1px solid #ddd;
-      padding: 8px 0;
-      cursor: pointer;
-      left: 200px;}
-     .icon {
-      color: #555;
-      margin: 10px 90px;
-      width: 28x;
-      height: 28px;}
-   </style>
+    body {
+        height: 50px;
+        width: 15px;
+        background-color: aliceblue;     
+        align-items: center;
+    }
+    .doraemon {
+        position: relative;
+        width: 250px;
+        height: 300;
+        align-items: center;
+    }
+    .head {
+        width: 280px;
+        height: 250px;
+        border-radius: 50%;
+        background-color: #00aaff;
+        position: absolute;
+        top: 0px;
+        left: 650px;
+        border: 3px solid #000; 
+    }
+
+    .face {
+        background-color: white;
+        width: 190px;
+        height: 190px;
+        border-radius: 80px;
+        position: absolute;
+        top: 5;
+        left: 25;
+        margin: 40px;
+        border: 2px solid #000;
+        
+
+    }
+    .eyeright {
+        background-color: white;
+        position: absolute;
+        width: 40px;
+        height: 45px;
+        display: block;
+        border-radius: 50px;
+        bottom: 155px;
+        left: 60px;
+        border: 2px solid black;
+        
+    }
+
+       .eyeleft {
+        background-color: white;
+        position: absolute;
+        width: 40px;
+        height: 45px;
+        display: block;
+        border-radius: 50px ;
+        bottom: 155px;
+        right: 48px;
+        margin: 3px;
+        border: 2px solid black;  
+    }
+      .pupil {
+      position: absolute;
+      top: 13px;
+      left: 75px;
+      width: 12px;
+      height: 15px;
+      background: black;
+      border-radius: 50%;
+    }
+    .pupil2 {
+      position: absolute;
+      top: 13px;
+      left: 110px;
+      width: 12px;
+      height: 15px;
+      background: black;
+      border-radius: 50%;
+    }
+    .nose {
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        border-radius: 50px;
+        position: absolute;
+        top: 25px;
+        left: 85px;
+        border: 2px solid #000;
+    }
+
+    .mouth {
+        width: 100px;
+        height: 80px;
+        background-color: brown;
+        border-radius: 10px 10px 50px 50px;
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        border: 3px solid #000;
+    }
+    .toung {
+        width:90px;
+        height: 50px;
+        background-color: red;
+        border-radius: 20px 20px 50px 50px;
+        position: absolute;
+        top: 100px;
+        left: 54px;
+        border: 3px solid #000;
+
+    }
+    .bell {
+        width:90px;
+        height: 10px;
+        background-color: red;
+        border-radius: 00px 00px 00px 00px;
+        position: absolute;
+        top: 00px;
+        left: 130px;
+        border: 3px solid #000;
+    }
+    .body {
+        width: 350px;
+        height: 300px;
+        background-color: #00aaff;
+        border-radius: 50px 50px 10px 10px;
+        position: absolute;
+        top: 250px;
+        left: 620px;
+        border: 2px solid #000;
+    }
+    .belly {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-radius: 70px;
+        position: absolute;
+        top: 70px;
+        left: 70px;
+        border: 2px solid #000;
+    }
+    .pocket {
+    position:absolute;
+    left:93px;
+    top:130px;
+    width:150px;
+    height:100px;
+    border-radius: 00px 00px 70px 70px;
+    border: 2px solid #000;
+  }
+    .leag1 {
+        width: 150px;
+        height: 100px;
+        background-color: #00aaff;
+        position: absolute;
+        top: 300px;
+        left: 190px;
+        border: 2px solid #000;
+        border-radius: 00px 00px 50px 50px;
+    }
+    .leag2 {
+        width: 150px;
+        height: 100px;
+        background-color: #00aaff;
+        position: absolute;
+        top: 300px;
+        left: 00px;
+        border: 2px solid #000;
+        border-radius: 00px 00px 50px 50px;
+    }
+       .hand1{
+        width: 90px;
+        height: 150px;
+        background-color: #00aaff;
+        position: absolute;
+        top: 00px;
+        right: 330px;
+        border: 2px solid #000;
+        border-radius: 00px 00px 50px 50px;
+        transform: rotate(70deg);
+    }
+        .hand2{
+        width: 90px;
+        height: 150px;
+        background-color: #00aaff;
+        position: absolute;
+        top: 00px;
+        left: 330px;
+        border: 2px solid #000;
+        border-radius: 00px 00px 50px 50px;
+        transform: rotate(-70deg);
+       
+    }
+  </style>
 </head>
 <body>
-    <h2>Instagram Bottom Navigation Bar</h2>
-     <div class="bottom-nav">
-      <img src="img/insta home.png" class="icon" alt="Home Icon">
-      <img src="img/insta search.png" class="icon" alt="Search Icon">
-      <img src="img/insta more.png" class="icon" alt="More Icon">
-      <img src="img/insta reel.png" class="icon" alt="Reel Icon">
-      <img src="img/insta user.png" class="icon" alt="Profile Icon">
+    <div class="doraemon">
+      <div class="head">
+         <div class="face">
+             <div class="eyeright"></div>
+             <div class="eyeleft"></div>
+             <div class="nose"></div>
+             <div class="mouth"></div>
+              <div class="pupil"></div>
+            <div class="pupil2"></div>
+            <div class="toung"></div>
+        </div>
+    </div>
+      <div class="body">
+         <div class="bell"></div>
+        <div class="belly"></div>
+        <div class="pocket"></div>
+           <div class="leag1"></div>
+              <div class="leag2"></div>
+               <div class="hand1"></div>
+                <div class="hand2"></div>
+      </div>      
+     </div>
+
     </div>
 </body>
 </html>
