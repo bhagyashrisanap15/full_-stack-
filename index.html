@@ -1,49 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Inline,Block & Inline Block </title>
-    <style>
-    body{
-     margin: 0;
-     padding: 0;
-        }
-    .card {
-     border: 1px solid black;
-     margin: 10px;
-     width: fit-content;
-     padding: 10px 20px;
-     border-radius: 10px;
-     box-shadow: 0 0 10px black;
-     display: inline-block;
-         }
-    .card-img {
-     height: 250px;
-     width: 300px;
-     text-align: center;
-    }
-    </style>
-    </head>
-    <body>
-    <div class="card">
-        <img src="../img/live interaction classes.gif" alt="live interaction classes"
-         class="card-img"/>
-        <h1 class="card-title"> Interaction Classes</h1>
+<head>
+  <title>Instagram Bottom Nav</title>
+  <style>
+      body {
+      margin: 0;
+      font-family: sans-serif;
+      text-align: center;}
+      .bottom-nav {
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      position: fixed;
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 8px 0;
+      cursor: pointer;
+      left: 200px;}
+     .icon {
+      color: #555;
+      margin: 10px 90px;
+      width: 28x;
+      height: 28px;}
+   </style>
+</head>
+<body>
+    <h2>Instagram Bottom Navigation Bar</h2>
+     <div class="bottom-nav">
+      <img src="img/insta home.png" class="icon" alt="Home Icon">
+      <img src="img/insta search.png" class="icon" alt="Search Icon">
+      <img src="img/insta more.png" class="icon" alt="More Icon">
+      <img src="img/insta reel.png" class="icon" alt="Reel Icon">
+      <img src="img/insta user.png" class="icon" alt="Profile Icon">
     </div>
-    
-    <div class="card">
-        <img src="../img/best-price.gif" alt="notes" class="card-img"/>
-        <h1 class="card-title"> Best-Price</h1>
-    </div>
-
-    <div class="card">
-        <img src="../img/video-channel.gif" alt="video-channel" class="card-img"/>
-        <h1 class="card-title"> Video-Channel</h1>
-    </div>
-
-    <div class="card">
-        <img src="../img/notes.gif" alt="notes" class="card-img"/>
-        <h1 class="card-title"> Notes</h1>
-    </div>
-
-    </body>
+</body>
 </html>
