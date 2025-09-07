@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Cards</title>
+  <style>
+  body {
+  margin: 0;
+  padding: 0;
+  background: #f1f3f6;
+}
+.card-container {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80px;
+  height: 500px;
+  align-items: center;
+
+}
+.card_icon {
+  width: 50px;
+  height: 50px;
+}
+
+    .bottom-nav {
+      bottom: 0;
+      background-color: aquamarine;
+      left: 0;
+      box-shadow: 0 -2px 10px rgba (0,0,0,0.1);
+      position: fixed;
+      border: 1px solid #ddd;
+      padding: 10px 20;
+      left: 200px; 
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;  
+}
+    .icon_nav {
+      color: #555;
+      bottom: 0;
+      margin: 12px 130px;
+      width: 40px;
+      height: 40px;
+    }
+    .icon:hover {
+      color: black;
+    } 
+
+.qr{
+    background-color: white; 
+    border: 1px solid white;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 700px;
+}
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">MY PAGE</h1>s
+  
+  <div class="card-container">
+      <img src="../img/insta home.png" class="card_icon">
+      <img src="../img/insta search.png" class="card_icon">
+      <img src="../img/insta more.png" class="card_icon">
+      <img src="../img/pho clock.png" class="card_icon">
+      <img src="../img/insta user.png" class="card_icon">
+  </div>
+
+   <div class="bottom-nav">
+      <img src="../img/insta home.png" class="icon_nav" alt="Home Icon">
+      <img src="../img/insta search.png" class="icon_nav" alt="Search Icon">
+      <img src="../img/pho qr-code.png" class="qr" alt="QR Icon">
+      <img src="../img/pho Alerts.png" class="icon_nav" alt="Alrts Icon">
+      <img src="../img/pho clock.png" class="icon_nav" alt="History Icon">
+   </div>
+</body>
+</html>
